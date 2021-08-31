@@ -40,10 +40,10 @@
 .card-container .card {
   display: flex;
   width: 400px;
-  height: fit-content;
+  height: 600px;
   position: absolute;
   z-index: 1;
-  top: 4rem;
+  top: 30%;
   text-align: center;
   align-items: center;
   justify-content: center;
