@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap");
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  background-color: var(--Pale-blue);
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container .bg {
+  position: inherit;
+  width: 100vw;
+}
+
+.container .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  flex-direction: column;
+}
+
+.card-container .card {
+  display: flex;
+  width: 400px;
+  height: fit-content;
+  position: absolute;
+  z-index: 1;
+  top: 4rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 25px 50px -50px var(--Dark-blue);
+  outline: none;
+  border: none;
+  overflow: hidden;
+}
+
+.card-container .card .text {
+  background-color: white;
+  height: 100%;
+  border-radius: 12px;
+  overflow-x: hidden;
+}
+
+.card-container .card .text .title {
+  margin-top: 35px;
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.card-container .card p {
+  color: var(--Desaturated-blue);
+  padding: 0 40px;
+}
+
+.card-container .card .music {
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  border-radius: 12px;
+  background-color: var(--Very-pale-blue);
+  gap: 10px;
+}
+
+.card-container .card .music img {
+  margin-right: 5px;
+}
+
+.card-container .card .music p {
+  text-align: left;
+  padding: 0;
+}
+
+.card-container .card .music a:hover {
+  text-decoration: none;
+}
+
+.card-container .card .music p a {
+  color: black;
+  font-weight: 700;
+}
+
+.card-container .card .btn {
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container .card .btn a {
+  width: 100%;
+}
+
+.card-container .card .btn a button {
+  background-color: var(--Bright-blue);
+  cursor: pointer;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.card-container .card .btn a button:hover {
+  opacity: 0.5;
+}
+
+.card-container .card .btn .pointer {
+  color: var(--Desaturated-blue);
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 460px) {
+  .container .bg {
+    background: url(./images/pattern-background-mobile.svg);
+  }
+  .container .card-container {
+    display: flex;
+    margin: 0 20px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-container .card {
+    width: inherit;
+  }
+}
