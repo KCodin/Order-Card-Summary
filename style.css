@@ -40,7 +40,7 @@
 .card-container .card {
   display: flex;
   width: 400px;
-  height: 600px;
+  height: 570px;
   position: absolute;
   z-index: 1;
   top: 4rem;
